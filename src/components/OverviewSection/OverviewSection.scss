@@ -1,0 +1,55 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.overview-section {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  position: relative;
+
+  overflow: hidden;
+
+  background-image: url("../../assets/images/backgrounds/bg-circle.svg");
+  background-repeat: no-repeat;
+  background-position: left -400px bottom -140px;
+  background-size: 1100px;
+
+  &__title {
+    font-size: 54px;
+    font-weight: $weight-bold;
+    text-align: center
+  }
+
+  &__cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  &__card {
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 450px;
+    padding: 50px;
+    min-height: 408px;
+    font-size: 30px;
+    font-family: $font-body;
+    text-align: center;
+
+    border-radius: 85px;
+
+    background: $color-black-soft;
+
+    img {
+      width: 70px;
+      height: 68px;
+      margin-bottom: 36px
+    }
+  }
+
+  &__content-container {
+    @include container;
+  }
+}
