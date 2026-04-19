@@ -1,0 +1,28 @@
+@use './variables' as *;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-body;
+  font-weight: $weight-regular;
+  background-color: $color-bg;
+  color: $color-white;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+section {
+  width: 100%;
+}
+
+button {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
