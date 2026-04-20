@@ -5,7 +5,7 @@ import img_device from "../../assets/images/sections/section-device.svg";
 
 export function MediaShowcase() {
   return (
-    <section className="media-show-case">
+    <section id="sobre" className="media-show-case">
       <div className="media-show-case__content-container">
         <h1>Lorem ipsum dolor sit amet</h1>
         <div className="media-show-case__img_container">

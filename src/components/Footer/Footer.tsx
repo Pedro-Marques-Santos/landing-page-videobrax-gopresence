@@ -2,7 +2,7 @@ import "./Footer.scss";
 
 export function Footer() {
   return (
-    <footer className="footer">
+    <footer id="contato" className="footer">
       <div className="footer__content-container">
         <div className="footer__top">
           <div className="footer__brand">
@@ -17,9 +17,9 @@ export function Footer() {
             <div className="footer__column">
               <h3>Navigation</h3>
               <a href="#">Home</a>
-              <a href="#">Products</a>
-              <a href="#">About</a>
-              <a href="#">Contact</a>
+              <a href="#produtos">Products</a>
+              <a href="#sobre">About</a>
+              <a href="#contato">Contact</a>
             </div>
 
             <div className="footer__column">

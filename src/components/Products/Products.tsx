@@ -6,7 +6,7 @@ import { Button } from "../Button/Button";
 
 export function Products() {
   return (
-    <section className="products">
+    <section id="produtos" className="products">
       <div className="products__content-container">
         <div className="products__content-left-container">
           <h1>Lorem ipsum</h1>

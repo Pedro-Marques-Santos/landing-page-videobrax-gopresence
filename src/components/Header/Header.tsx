@@ -19,7 +19,7 @@ export function Header() {
         </a>
 
         <nav className="header__nav">
-          <a href="#home" className="header__link">
+          <a href="#inicio" className="header__link">
             Início
           </a>
           <a href="#produtos" className="header__link">
@@ -70,7 +70,7 @@ export function Header() {
 
               <nav className="header__mobileNav">
                 <a
-                  href="#home"
+                  href="#inicio"
                   className="header__mobileLink"
                   onClick={handleClose}
                 >

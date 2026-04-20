@@ -10,7 +10,7 @@ import icon_zoom from "../../assets/images/icons/icon-zoom.svg";
 
 export function LiveSection() {
   return (
-    <section className="live-section">
+    <section id="inicio" className="live-section">
       <div className="live-section__container">
         <div className="live-section__content">
           <div className="live-section__text">
