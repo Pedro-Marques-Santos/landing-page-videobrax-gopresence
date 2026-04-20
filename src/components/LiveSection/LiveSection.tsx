@@ -32,13 +32,19 @@ export function LiveSection() {
       <div className="live-section__icons_container">
         <div className="live-section__container">
           <div className="live-section__container-icons">
-            <img src={icon_facebook} alt="" />
-            <img src={icon_instagram} alt="" />
-            <img src={icon_tiktok} alt="" />
-            <img src={icon_twitch} alt="" />
-            <img src={icon_youtube} alt="" />
-            <img src={icon_zoom} alt="" />
+            <img src={icon_facebook} alt="Facebook" />
+            <img src={icon_instagram} alt="Instagram" />
+            <img src={icon_tiktok} alt="TikTok" />
+            <img src={icon_twitch} alt="Twitch" />
+            <img src={icon_youtube} alt="YouTube" />
+            <img src={icon_zoom} alt="Zoom" />
           </div>
+        </div>
+      </div>
+
+      <div className="live-section__container">
+        <div className="live-section__img_container_mobile">
+          <img src={img_live_preview} alt="Prévia da live" />
         </div>
       </div>
 
