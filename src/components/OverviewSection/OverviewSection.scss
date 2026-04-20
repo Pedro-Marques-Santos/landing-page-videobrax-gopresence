@@ -16,7 +16,7 @@
   }
 
   &__title {
-    font-size: clamp(30px, 4vw, 54px);
+    font-size: clamp(28px, 3.8vw, 54px);
     font-weight: $weight-bold;
     font-family: $font-heading;
     text-align: center;
@@ -44,7 +44,7 @@
     border-radius: clamp(28px, 6vw, 85px);
     background: $color-black-soft;
 
-    font-size: clamp(18px, 2vw, 30px);
+    font-size: clamp(18px, 1.9vw, 30px);
     font-family: $font-body;
     line-height: 1.35;
 

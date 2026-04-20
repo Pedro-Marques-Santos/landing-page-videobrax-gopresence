@@ -10,7 +10,7 @@
   }
 
   h1 {
-    font-size: 54px;
+    font-size: clamp(32px, 2.2vw, 54px);
     font-weight: $weight-bold;
     margin-bottom: 120px;
     text-align: center;
@@ -19,7 +19,7 @@
   
   h2 {
     font-family: $font-body;
-    font-size: 30px;
+    font-size: clamp(20px, 2.2vw, 30px);
     color: $color-gray;
     text-align: center;
     max-width: 1200px;
@@ -99,12 +99,10 @@
 @media (max-width: 1024px) {
   .media-show-case {
     h1 {
-      font-size: 42px;
       margin-bottom: 80px;
     }
 
     h2 {
-      font-size: 24px;
       max-width: 900px;
     }
 
@@ -128,12 +126,10 @@
   .media-show-case {
 
     h1 {
-      font-size: 34px;
       margin-bottom: 56px;
     }
 
     h2 {
-      font-size: 20px;
       margin-top: 40px;
     }
 
