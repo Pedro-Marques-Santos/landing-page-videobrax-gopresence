@@ -1,7 +1,7 @@
 import "./MediaShowcase.scss";
 
-import img from "../../assets/images/sections/section-collaboration.svg";
-import im2 from "../../assets/images/sections/section-device.svg";
+import img_collaboration from "../../assets/images/sections/section-collaboration.svg";
+import img_device from "../../assets/images/sections/section-device.svg";
 
 export function MediaShowcase() {
   return (
@@ -10,15 +10,15 @@ export function MediaShowcase() {
         <h1>Lorem ipsum dolor sit amet</h1>
         <div className="media-show-case__img_container">
           <div className="media-show-case__card-left">
-            <img src={im2} alt="" />
+            <img src={img_device} alt="" />
             <h5>Lorem ipsum, dolor sit amet</h5>
           </div>
           <div className="media-show-case__card-center">
-            <img src={img} alt="" />
+            <img src={img_collaboration} alt="" />
             <h5>Lorem ipsum, dolor sit amet</h5>
           </div>
           <div className="media-show-case__card-right">
-            <img src={im2} alt="" />
+            <img src={img_device} alt="" />
             <h5>Lorem ipsum, dolor sit amet</h5>
           </div>
         </div>

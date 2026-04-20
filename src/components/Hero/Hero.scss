@@ -24,12 +24,12 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    padding-top: 140px;
-    padding-bottom: 80px;
+    padding-top: clamp(110px, 12vw, 140px);
+    padding-bottom: clamp(48px, 7vw, 80px);
   }
 
   &__content {
-    max-width: 766px;
+    max-width: min(766px, 100%);
     text-align: right;
     z-index: 2;
   }
@@ -37,9 +37,37 @@
   &__title {
     font-family: $font-heading;
     font-weight: $weight-bold;
-    font-size: 83px;
+    font-size: clamp(38px, 6vw, 83px);
     line-height: 1.05;
     color: $color-white;
     z-index: 2;
+  }
+
+  @media (max-width: 768px) {
+    &__container {
+      padding-top: 120px;
+      padding-bottom: 56px;
+    }
+
+    &__content {
+      max-width: 100%;
+    }
+
+    &__title {
+      font-size: 48px;
+      line-height: 1.08;
+    }
+  }
+
+  @media (max-width: 480px) {
+    &__container {
+      padding-top: 110px;
+      padding-bottom: 40px;
+    }
+
+    &__title {
+      font-size: 36.5px;
+      line-height: 1.1;
+    }
   }
 }

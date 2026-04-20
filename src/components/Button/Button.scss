@@ -2,13 +2,20 @@
 @use '../../styles/mixins' as *;
 
 .button {
+  width: 100%;
+
   button {
     position: relative;
+    overflow: hidden;
+    isolation: isolate;
+
     width: 100%;
-    height: 92px;
-    padding: 0 32px;
+    max-width: 100%;
+    min-height: clamp(56px, 7vw, 92px);
+    padding: 0 clamp(20px, 4vw, 32px);
+    padding-right: clamp(48px, 8vw, 88px);
     border: none;
-    border-radius: 30px;
+    border-radius: clamp(18px, 3vw, 30px);
     background: $color-accent-yellow;
     cursor: pointer;
 
@@ -16,24 +23,78 @@
     align-items: center;
     justify-content: center;
 
-    font-size: 35px;
+    font-size: clamp(18px, 3vw, 35px);
     font-weight: $weight-semibold;
     color: $color-bg;
+    text-align: center;
+
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+
+  button::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.12);
+    opacity: 0;
+    transition: opacity 0.25s ease;
+    z-index: 0;
   }
 
   button::after {
     content: "";
     position: absolute;
-    right: 60px;
+    right: clamp(20px, 4vw, 60px);
     top: 50%;
     transform: translateY(-50%);
-    width: 22.5px;
-    height: 22.5px;
+    width: clamp(14px, 2vw, 22.5px);
+    height: clamp(14px, 2vw, 22.5px);
     background: url("../../assets/images/icons/icon-chevron-right.svg") no-repeat center;
     background-size: contain;
+    z-index: 2;
+  }
+
+  button:hover::before {
+    opacity: 1;
+  }
+
+  button:active {
+    transform: scale(0.98);
   }
 
   span {
-    line-height: 1;
+    position: relative;
+    z-index: 2;
+    line-height: 1.1;
+    display: inline-block;
+    font-family: $font-heading;
+    font-weight: $weight-semibold;
+  }
+}
+
+@media (max-width: 768px) {
+  .button {
+    button {
+      min-height: 64px;
+      border-radius: 22px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .button {
+    button {
+      min-height: 56px;
+      padding-left: 18px;
+      padding-right: 44px;
+      font-size: 18px;
+      border-radius: 18px;
+    }
+
+    button::after {
+      right: 16px;
+      width: 14px;
+      height: 14px;
+    }
   }
 }

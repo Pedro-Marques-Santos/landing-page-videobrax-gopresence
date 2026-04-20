@@ -1,0 +1,66 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.live-section {
+  margin-top: 100px;
+  position: relative;
+  overflow-x: clip;
+
+  h1 {
+    font-size: 46.47px;
+    font-family: $font-accent;
+    font-weight: $weight-bold;
+    color: $color-primary;
+  }
+
+  h2 {
+    margin-top: 5px;
+    font-size: 54px;
+    font-weight: $weight-bold;
+    margin-bottom: 20px
+  }
+
+  h3 {
+    font-family: $font-body;
+    font-weight: $weight-regular;
+    font-size: 30px;
+    color: $color-gray;
+  }
+
+  &__container {
+    @include container;
+  }
+
+  &__quebracontainer {
+    max-width: 50%;
+  }
+
+  &__icons_container {
+    position: relative;
+    display: flex;
+    background: $color-black-soft;
+    font-size: 30px;
+    height: 80px;
+    margin-top: 30px;
+  }
+
+  &__container-icons {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__img_container {
+    position: absolute;
+    top: -80px;
+    right: 0;
+    transform: translateX(100px);
+
+    // width: 50%;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+}
