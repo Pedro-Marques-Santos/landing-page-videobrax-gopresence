@@ -2,7 +2,7 @@ import { Footer } from "../../components/Footer/Footer";
 import { Header } from "../../components/Header/Header";
 import { Hero } from "../../components/Hero/Hero";
 import { IntroCard } from "../../components/IntroCard/IntroCard";
-// import { LiveSection } from "../../components/LiveSection/LiveSection";
+import { LiveSection } from "../../components/LiveSection/LiveSection";
 import { MediaShowcase } from "../../components/MediaShowcase/MediaShowcase";
 import { OverviewSection } from "../../components/OverviewSection/OverviewSection";
 import { Products } from "../../components/Products/Products";
@@ -16,7 +16,7 @@ export function HomePage() {
         <Hero />
       </section>
       <IntroCard />
-      {/* <LiveSection /> */}
+      <LiveSection />
       <OverviewSection />
       <Products />
       <MediaShowcase />
